@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://radiant-garden-37981.herokuapp.com/api/v1/population_estimates/32003
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 12 Mar 2017 22:29:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '99'
+      X-Content-Type-Options:
+      - nosniff
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"Zip":"32003","CBSA":"27260","MSA":"Jacksonville, FL","Pop2015":"1,449,481","Pop2014":"1,421,004"}'
+    http_version: 
+  recorded_at: Sun, 12 Mar 2017 22:29:37 GMT
+recorded_with: VCR 3.0.3

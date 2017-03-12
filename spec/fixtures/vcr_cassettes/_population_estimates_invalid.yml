@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://radiant-garden-37981.herokuapp.com/api/v1/population_estimates/133424
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 12 Mar 2017 22:29:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '73'
+      X-Content-Type-Options:
+      - nosniff
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"Zip":"133424","CBSA":"N/A","MSA":"N/A","Pop2015":"N/A","Pop2014":"N/A"}'
+    http_version: 
+  recorded_at: Sun, 12 Mar 2017 22:29:37 GMT
+recorded_with: VCR 3.0.3
